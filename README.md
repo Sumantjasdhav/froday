@@ -1,0 +1,2 @@
+# froday
+my new repo
