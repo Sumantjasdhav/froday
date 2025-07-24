@@ -5,4 +5,14 @@ resource "azurerm_storage_account" "example" {
   account_tier             = "Standard"
   account_replication_type = "GRS"
 public_network_access_enabled = false
+ queue_properties  {
++   logging {
+        delete                = true
+        read                  = true
+        write                 = true
+        version               = "1.0"
+        retention_policy_days = 10
+    }
+  }
+}
 }
