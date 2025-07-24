@@ -4,4 +4,5 @@ resource "azurerm_storage_account" "example" {
   location                 = var.storage_account_location
   account_tier             = "Standard"
   account_replication_type = "GRS"
+public_network_access_enabled = false
 }
